@@ -8,25 +8,5 @@ pipeline {
                 checkout scm
             }
         }
-        // 2. Check if 'my-code.c' exists, 
-        stage ('Build') {
-            steps {
-                script {
-                    if (fileExists('my-code.c') == false) {
-                        unstable('Code file not found!')
-                    }
-                }
-            }
-        }
-        // 3. Dummy deploy
-        // Print a message (only done if the build is stable)
-        stage ('Deploy') {
-            when { not { equals expected: 'UNSTABLE'
-            steps {
-                echo 'Deploying it gently...'
-            }
-        }
-    }
-}
     }
 }
