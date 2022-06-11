@@ -1,10 +1,10 @@
 Fields
 
 Name: Author
-Value: Sayem
+Value: Bot
 
 Name: Username
-Value: sayem-ux
+Value: bot-ux
 
 Name: OS
-Value: Windows
+Value: Linux
